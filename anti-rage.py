@@ -11,6 +11,8 @@ key = 't' #change the key. ctrl+"key" to launch.
 autosend = True # True or False, autosend enable or not
 
 #program 
+print(f"waiting for shortcut (ctrl+{key})...")
+
 while True:
     if keyboard.is_pressed("ctrl+"+key):
             keyboard.press_and_release('ctrl+a')
